@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Task Details" section_id="a2b82685834ca2109befcc65eeaad389" sys_domain="global" table="x_1610843_event_0_event_task" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>process_flow.xml</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>f6b86685834ca2109befcc65eeaad30f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">3d0126c9830ca2109befcc65eeaad3b7</sys_ui_formatter>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>72b86685834ca2109befcc65eeaad310</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>f6b86685834ca2109befcc65eeaad310</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>task_name</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>7eb86685834ca2109befcc65eeaad310</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due_date</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>f2b86685834ca2109befcc65eeaad311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>7ab86685834ca2109befcc65eeaad311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>event_id</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>feb86685834ca2109befcc65eeaad311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>76b86685834ca2109befcc65eeaad312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:07</sys_created_on>
+            <sys_id>fab86685834ca2109befcc65eeaad312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1610843_event_0_event_task" sys_domain="global" view="Default view">a2b82685834ca2109befcc65eeaad389</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Task Details</caption>
+            <header>false</header>
+            <name>x_1610843_event_0_event_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-01 11:41:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2b82685834ca2109befcc65eeaad389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1610843_event_0_event_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+            <sys_update_name>sys_ui_section_a2b82685834ca2109befcc65eeaad389</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-01 11:41:06</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

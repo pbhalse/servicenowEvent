@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1610843_event_0_event_record">status=new^EQ<item display_value="New" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="new"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>New</label>
+        <name>new</name>
+        <order>1</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 10:59:33</sys_created_on>
+        <sys_id>fbee9689830ca2109befcc65eeaad351</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>new</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_process_flow_fbee9689830ca2109befcc65eeaad351</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 11:45:53</sys_updated_on>
+        <table>x_1610843_event_0_event_record</table>
+    </sys_process_flow>
+</record_update>
