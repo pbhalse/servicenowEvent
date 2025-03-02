@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>contact_number</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 06:50:01</sys_created_on>
+        <sys_id>14af2e99834022109befcc65eeaad3ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>contact_number</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_ui_policy_action_14af2e99834022109befcc65eeaad3ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 06:50:01</sys_updated_on>
+        <table>x_1610843_event_0_event_record</table>
+        <ui_policy display_value="Contact Number field mandatory when contact_person is filled">c15fa699834022109befcc65eeaad3db</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=14af2e99834022109befcc65eeaad3ed"/>
+</record_update>
