@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_1610843_event_0_event_record</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p><span style="font-size: 12pt;">Event Scheduled: <span data-token-index="1">${event_name}</span> </span></p>
+<p><span style="font-size: 12pt;">Date:&nbsp;<span data-token-index="3">${event_date}</span> </span></p>
+<p><span style="font-size: 12pt;">Location:&nbsp;<span data-token-index="5">${location}</span>&nbsp;</span></p>
+<p><span style="font-size: 12pt;">Status:&nbsp;<span data-token-index="9">${status}</span><!-- notionvc: 17146ea6-87c7-4231-a5d5-26edd00e7cd8 --> </span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Event Scheduled Template</name>
+        <sms_alternate/>
+        <subject>Event Scheduled: ${event_name}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 05:55:52</sys_created_on>
+        <sys_id>f0e0ea19830022109befcc65eeaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Scheduled Template</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sysevent_email_template_f0e0ea19830022109befcc65eeaad319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 05:55:52</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>
