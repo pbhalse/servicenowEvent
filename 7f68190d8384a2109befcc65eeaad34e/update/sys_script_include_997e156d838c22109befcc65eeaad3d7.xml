@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610843_event_0.VendorUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>VendorUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var VendorUtils = Class.create();
+VendorUtils.prototype = {
+    initialize: function () {
+        this.vendorTable = 'x_1610843_event_0_vendor';
+    },
+
+    getVendorDetailsById: function (vendorId) {
+        var vendorGR = new GlideRecord(this.vendorTable);
+        vendorGR.addQuery('sys_id', vendorId);
+        vendorGR.query();
+        if (vendorGR.next()) {
+            return this.mapVendorFields(vendorGR);
+        }
+        return null;
+    },
+
+    isVendorAvailable: function (vendorId) {
+        var vendorGR = new GlideRecord(this.vendorTable);
+        vendorGR.addQuery('sys_id', vendorId);
+        vendorGR.query();
+        if (vendorGR.next()) {
+            return vendorGR.availability.toString() == 'true';
+        }
+        return false;
+    },
+
+    getVendorsByEvent: function (eventId) {
+        var vendorList = [];
+        var vendorGR = new GlideRecord(this.vendorTable);
+        vendorGR.addQuery('event_id', eventId);
+        vendorGR.query();
+        while (vendorGR.next()) {
+             vendorList.push(this.mapVendorFields(vendorGR));
+        }
+        return vendorList;
+    },
+
+    mapVendorFields: function (vendorGR) {
+        return {
+            sysId: vendorGR.getUniqueValue(),
+            eventId: vendorGR.getValue('event_id'),
+            vendorName: vendorGR.getValue('vendor_name'),
+            contactPerson: vendorGR.getValue('contact_person'),
+            contactNumber: vendorGR.getValue('contact_number'),
+            servicesProvided: vendorGR.getValue('services_provided'),
+            availability: vendorGR.availability.toString() == 'true',
+            email: vendorGR.getValue('email')
+        };
+    },
+
+    type: 'VendorUtils'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 19:49:31</sys_created_on>
+        <sys_id>997e156d838c22109befcc65eeaad3d7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>VendorUtils</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_script_include_997e156d838c22109befcc65eeaad3d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 19:56:29</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>997e156d838c22109befcc65eeaad3d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 19:49:31</sys_created_on>
+        <sys_id>fa12692d838c22109befcc65eeaad303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 19:49:31</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

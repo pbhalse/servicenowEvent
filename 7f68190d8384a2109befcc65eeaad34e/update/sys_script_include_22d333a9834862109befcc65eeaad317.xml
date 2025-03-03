@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610843_event_0.VendorUtilsCS</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>VendorUtilsCS</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var VendorUtilsCS = Class.create();
+VendorUtilsCS.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getVendorDetailsById: function(vendorId) {
+        return JSON.stringify(new VendorUtils().getVendorDetailsById(vendorId));
+    },
+
+    isVendorAvailable: function(vendorId) {
+        return JSON.stringify(new VendorUtils().isVendorAvailable(vendorId));
+    },
+
+    getVendorsByEvent: function(_eventId) {
+        return JSON.stringify(new VendorUtils().getVendorsByEvent(_eventId));
+    },
+
+    type: 'VendorUtilsCS'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:27:17</sys_created_on>
+        <sys_id>22d333a9834862109befcc65eeaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VendorUtilsCS</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_script_include_22d333a9834862109befcc65eeaad317</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:27:17</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>22d333a9834862109befcc65eeaad317</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:27:17</sys_created_on>
+        <sys_id>9514fb29834862109befcc65eeaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:27:17</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

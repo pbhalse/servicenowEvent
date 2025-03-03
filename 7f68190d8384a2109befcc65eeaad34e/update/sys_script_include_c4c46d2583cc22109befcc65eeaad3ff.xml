@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610843_event_0.BudgetUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BudgetUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BudgetUtils = Class.create();
+BudgetUtils.prototype = {
+    initialize: function() {
+        this.budgetTable = 'x_1610843_event_0_budget';
+    },
+
+    calculateTotalBudget: function (eventId) {
+        var budgetGR = new GlideRecordSecure(this.budgetTable);
+        budgetGR.addQuery('event_id', eventId);
+        budgetGR.query();
+        if (budgetGR.next()) {
+            return budgetGR.getValue('total_budget');
+        }
+        return 0;
+    },
+
+    calculateRemainingBudget: function(eventId) {
+        var totalBudget = 0,
+            amountSpent = 0,
+            amountRemaining = 0;
+
+        var budgetGR = new GlideRecordSecure(this.budgetTable);
+        budgetGR.addQuery('event_id', eventId);
+        budgetGR.query();
+
+        if (budgetGR.next()) {
+            totalBudget = parseFloat(budgetGR.getValue('total_budget')) || 0;
+            amountSpent = parseFloat(budgetGR.getValue('amount_spent')) || 0;
+            amountRemaining = totalBudget - amountSpent;
+        }
+
+        return amountRemaining;
+    },
+
+    isBudgetApproved: function(eventId) {
+        var budgetGR = new GlideRecordSecure(this.budgetTable);
+        budgetGR.addQuery('event_id', eventId);
+        budgetGR.addQuery('status', 'approved');
+        budgetGR.query();
+        return budgetGR.hasNext();
+    },
+
+    getBudgetDetailsByEvent: function(eventId) {
+        var budgetList = [];
+        var budgetGR = new GlideRecordSecure(this.budgetTable);
+        budgetGR.addQuery('event_id', eventId);
+        budgetGR.query();
+        while (budgetGR.next()) {
+            budgetList.push(this.mapBudgetFields(budgetGR));
+        }
+        return budgetList;
+    },
+
+    mapBudgetFields: function(budgetGR) {
+        return {
+            sysId: budgetGR.getUniqueValue(),
+            eventId: budgetGR.getValue('event_id'),
+            totalBudget: budgetGR.getValue('total_budget'),
+            amountSpent: budgetGR.getValue('amount_spent'),
+            amountRemaining: budgetGR.getValue('amount_remaining'),
+            status: budgetGR.getValue('status')
+        };
+    },
+
+    type: 'BudgetUtils'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 20:03:35</sys_created_on>
+        <sys_id>c4c46d2583cc22109befcc65eeaad3ff</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>BudgetUtils</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_script_include_c4c46d2583cc22109befcc65eeaad3ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 20:10:54</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c4c46d2583cc22109befcc65eeaad3ff</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 20:03:34</sys_created_on>
+        <sys_id>7c55692583cc22109befcc65eeaad3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 20:03:34</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

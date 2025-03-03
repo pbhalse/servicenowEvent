@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610843_event_0.AttendeeUtilsCS</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AttendeeUtilsCS</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AttendeeUtilsCS = Class.create();
+AttendeeUtilsCS.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	isAttendeeRegistered: function(attendeeId) {
+        return JSON.stringify(new AttendeeUtils().isAttendeeRegistered(attendeeId));
+    },
+
+    getAttendeeDetailsById: function(attendeeId) {
+        return JSON.stringify(new AttendeeUtils().getAttendeeDetailsById(attendeeId));
+    },
+
+    getAttendeesByEvent: function(eventId) {
+        return JSON.stringify(new AttendeeUtils().getAttendeesByEvent(eventId));
+    },
+
+    type: 'AttendeeUtilsCS'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:39:55</sys_created_on>
+        <sys_id>4dd67be9834862109befcc65eeaad31a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AttendeeUtilsCS</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_script_include_4dd67be9834862109befcc65eeaad31a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:39:55</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4dd67be9834862109befcc65eeaad31a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:39:54</sys_created_on>
+        <sys_id>02f6bf2d834862109befcc65eeaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:39:54</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

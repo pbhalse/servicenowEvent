@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1610843_event_0.FeedbackUtilsScriptInclude</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>FeedbackUtilsScriptInclude</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FeedbackUtilsScriptInclude = Class.create();
+FeedbackUtilsScriptInclude.prototype = {
+    initialize: function () {
+        this.feedbackTable = 'x_1610843_event_0_feedback';
+    },
+
+    getFeedbackDetailsById: function (feedbackId) {
+        var feedbackGR = new GlideRecordSecure(this.feedbackTable);
+        feedbackGR.addQuery('sys_id', feedbackId);
+        feedbackGR.query();
+        if (feedbackGR.next()) {
+            return this.mapFeedback(feedbackGR);
+        }
+        return null;
+    },
+
+    isFeedbackPositive: function (feedbackId) {
+        var feedbackGR = new GlideRecordSecure(this.feedbackTable);
+        feedbackGR.addQuery('sys_id', feedbackId);
+        feedbackGR.query();
+        if (feedbackGR.next()) {
+            var rating = feedbackGR.getValue('rating');
+            rating = rating ? String(rating) : ''; // Convert to string safely
+            return rating === 'excellent' || rating === 'good';
+        }
+        return false;
+    },
+
+    getFeedbackByEvent: function (eventId) {
+        var feedbackList = [];
+        var feedbackGR = new GlideRecordSecure(this.feedbackTable);
+        feedbackGR.addQuery('event_id', eventId);
+        feedbackGR.query();
+        while (feedbackGR.next()) {
+            feedbackList.push(this.mapFeedback(feedbackGR));
+        }
+        return feedbackList;
+    },
+
+    mapFeedback: function (feedbackGR) {
+        return {
+            feedbackId: feedbackGR.getUniqueValue(),
+            eventId: feedbackGR.getValue('event_id'),
+            attendeeId: feedbackGR.getValue('attendee_id'),
+            rating: feedbackGR.getValue('rating') ? String(feedbackGR.getValue('rating')) : '',
+            comment: feedbackGR.getValue('comment')
+        };
+    },
+
+    type: 'FeedbackUtilsScriptInclude'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 20:12:47</sys_created_on>
+        <sys_id>2627e9e583cc22109befcc65eeaad348</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>FeedbackUtilsScriptInclude</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_script_include_2627e9e583cc22109befcc65eeaad348</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 20:24:57</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2627e9e583cc22109befcc65eeaad348</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 20:12:47</sys_created_on>
+        <sys_id>fb67ada583cc22109befcc65eeaad393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 20:12:47</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
