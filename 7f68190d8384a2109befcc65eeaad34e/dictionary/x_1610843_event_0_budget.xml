@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="313ff9cd8348a2109befcc65eeaad370" extends="task" label="Budget" max_length="40" name="x_1610843_event_0_budget" type="collection">
+        <element label="Amount Spent" max_length="20" name="amount_spent" type="currency"/>
+        <element label="Event ID" max_length="32" name="event_id" reference="x_1610843_event_0_event_record" type="reference"/>
+        <element label="Total Budget" max_length="20" name="total_budget" type="currency"/>
+        <element label="Amount Remaining" max_length="20" name="amount_remaining" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+            </choice>
+        </element>
+    </element>
+</database>

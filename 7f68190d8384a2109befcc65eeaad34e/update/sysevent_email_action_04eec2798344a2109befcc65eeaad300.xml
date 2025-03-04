@@ -72,4 +72,15 @@
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>04eec2798344a2109befcc65eeaad300</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 17:47:31</sys_created_on>
+        <sys_id>a1cfc6f58344a2109befcc65eeaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 17:47:31</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

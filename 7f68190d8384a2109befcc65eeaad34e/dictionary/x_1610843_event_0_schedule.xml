@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="da34520d83c8a2109befcc65eeaad39f" extends="task" label="Schedule" max_length="40" name="x_1610843_event_0_schedule" type="collection">
+        <element label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
+        <element label="Activity Name" max_length="40" name="activity_name" type="string"/>
+        <element label="Event ID" max_length="32" name="event_id" reference="x_1610843_event_0_event_record" type="reference"/>
+        <element label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
+    </element>
+</database>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
+    <sys_dictionary_override action="DELETE">
+        <attributes/>
+        <attributes_override>false</attributes_override>
+        <base_table>task</base_table>
+        <calculation/>
+        <calculation_override>false</calculation_override>
+        <default_value/>
+        <default_value_override>false</default_value_override>
+        <dependent/>
+        <dependent_override>false</dependent_override>
+        <display_override>false</display_override>
+        <element>assigned_to</element>
+        <mandatory>false</mandatory>
+        <mandatory_override>false</mandatory_override>
+        <name>x_1610843_event_0_event_task</name>
+        <read_only>false</read_only>
+        <read_only_override>false</read_only_override>
+        <reference_qual>roles=x_1610843_event_0.event_planner</reference_qual>
+        <reference_qual_override>true</reference_qual_override>
+        <sys_class_name>sys_dictionary_override</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 18:56:26</sys_created_on>
+        <sys_id>3eab08998304e2109befcc65eeaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assigned_to</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_dictionary_override_3eab08998304e2109befcc65eeaad301</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 18:56:26</sys_updated_on>
+    </sys_dictionary_override>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</application>
+        <file_path/>
+        <instance_id>7db1fca3dbbd7190199b1729139619b2</instance_id>
+        <instance_name>dev187579</instance_name>
+        <name>sys_dictionary_override_3eab08998304e2109befcc65eeaad301</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>task</base_table><calculation/><calculation_override>false</calculation_override><default_value/><default_value_override>false</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>false</display_override><element>assigned_to</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>x_1610843_event_0_event_task</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual>roles=x_1610843_event_0.event_planner</reference_qual><reference_qual_override>true</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-01 18:56:26</sys_created_on><sys_id>3eab08998304e2109befcc65eeaad301</sys_id><sys_mod_count>0</sys_mod_count><sys_name>assigned_to</sys_name><sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package><sys_policy/><sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope><sys_update_name>sys_dictionary_override_3eab08998304e2109befcc65eeaad301</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-01 18:56:26</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+        <payload_hash>525735661</payload_hash>
+        <record_name>assigned_to</record_name>
+        <reverted_from/>
+        <source>90dfc3058300e2109befcc65eeaad300</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 18:56:26</sys_created_on>
+        <sys_id>2b5cc41d8304e2109befcc65eeaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195531122c40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 18:56:26</sys_updated_on>
+        <type>Dictionary Entry Override</type>
+        <update_guid>2f5cc41dce04e2109313ab9bdaf2868c</update_guid>
+        <update_guid_history>2f5cc41dce04e2109313ab9bdaf2868c:525735661</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 19:12:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary_override">sys_dictionary_override</sys_db_object>
+        <sys_id>1d51889bd2e24bd48fa8e9d4a6201ad9</sys_id>
+        <sys_metadata>3eab08998304e2109befcc65eeaad301</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assigned_to</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_parent display_value="Event ID">13f57d4d8308a2109befcc65eeaad371</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_scope_delete display_value="">36e0d27460c44ee88f0f2a6201a32ea4</sys_scope_delete>
+        <sys_update_name>sys_dictionary_override_3eab08998304e2109befcc65eeaad301</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_override_3eab08998304e2109befcc65eeaad301">2b5cc41d8304e2109befcc65eeaad38d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 19:12:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

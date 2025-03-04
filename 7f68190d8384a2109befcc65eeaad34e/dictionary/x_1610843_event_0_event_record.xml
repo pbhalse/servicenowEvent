@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="8ae4edc583c4a2109befcc65eeaad35b" extends="task" label="Event Record" max_length="40" name="x_1610843_event_0_event_record" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
+        <element label="Event Name" max_length="40" name="event_name" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="2" value="scheduled"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="5" value="cancelled"/>
+                <element inactive_on_update="false" label="Planned" sequence="1" value="planned"/>
+                <element inactive_on_update="false" label="Completed" sequence="4" value="completed"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="3" value="confirmed"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element label="Contact Person" max_length="40" name="contact_person" type="string"/>
+        <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
+        <element label="Emai" max_length="40" name="emai" type="string"/>
+        <element label="VIP" max_length="40" name="vip" type="boolean"/>
+        <element label="Event Date" max_length="40" name="event_date" type="glide_date_time"/>
+    </element>
+</database>

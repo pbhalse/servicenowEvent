@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="0878190d8384a2109befcc65eeaad37e" extends="sn_creatorstudio_task" label="Event Management &amp;amp; Planning System Request" max_length="40" name="x_1610843_event_0_request" type="collection"/>
+</database>

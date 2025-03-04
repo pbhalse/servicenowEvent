@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1854000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>flow_to_automatically_confirm_event_details_24_hours_before_the_event_date</internal_name>
+        <label_cache>[{"name":"b0193947-437d-4e57-9dbd-2cb2c8f2de63.item","label":"2 - For Each➛Event Record Record","reference":"x_1610843_event_0_event_record","reference_display":"Event Record","type":"reference","base_type":"reference","usedInstances":{"64dc158e-a6ee-4579-97b9-9c94a2e8894b":["record"],"b2946d9f-600c-420c-9209-9d8ce5e4740b":["record"],"4d0e214a-4cb5-494f-ac8e-f6fe4b881547":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"d7b39d9e-da46-4412-9242-0443181ed789.Records","label":"1 - Look Up Records➛Event Record Records","reference":"x_1610843_event_0_event_record","reference_display":"Event Record","type":"records","base_type":"records","usedInstances":{"b0193947-437d-4e57-9dbd-2cb2c8f2de63":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>21f0e2fd8384a2109befcc65eeaad387</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Flow to automatically confirm event details 24 hours before the event date</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>edf0e2fd8384a2109befcc65eeaad3a8</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:43:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>599c96798384a2109befcc65eeaad32a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Flow to automatically confirm event details 24 hours before the event date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_hub_flow_599c96798384a2109befcc65eeaad32a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:14:25</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=599c96798384a2109befcc65eeaad32a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=599c96798384a2109befcc65eeaad32a"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2025-03-03 19:02:36</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>edf0e2fd8384a2109befcc65eeaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <time>1970-01-01 18:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:edf0e2fd8384a2109befcc65eeaad3a8^sys_idNOT IN29f0e2fd8384a2109befcc65eeaad3a9"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:edf0e2fd8384a2109befcc65eeaad3a8</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2025-03-03 19:02:36</run_start>
+        <run_time>1970-01-01 18:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('edf0e2fd8384a2109befcc65eeaad3a8');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>29f0e2fd8384a2109befcc65eeaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">edf0e2fd8384a2109befcc65eeaad3a8</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=599c96798384a2109befcc65eeaad32a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=599c96798384a2109befcc65eeaad32a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=599c96798384a2109befcc65eeaad32a^sys_idNOT INd99c96798384a2109befcc65eeaad32c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>599c96798384a2109befcc65eeaad32a</id>
+        <name>Flow to automatically confirm event details 24 hours before the event date</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:43:29</sys_created_on>
+        <sys_id>d99c96798384a2109befcc65eeaad32c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 18:43:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d99c96798384a2109befcc65eeaad32c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=599c96798384a2109befcc65eeaad32a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=599c96798384a2109befcc65eeaad32a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=599c96798384a2109befcc65eeaad32a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=599c96798384a2109befcc65eeaad32a^sys_idNOT IN84f0a2fd8384a2109befcc65eeaad374"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">599c96798384a2109befcc65eeaad32a</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:30</sys_created_on>
+        <sys_id>84f0a2fd8384a2109befcc65eeaad374</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:35</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STUvEMBD9K5LzWtJdP3sTZMGDCipeRMo0me4GpklM09Uq/ncnbVxULLnMm5k37z369CEIGiRRiQfToVgIYyMGC/QwemR0Q0ZjHedeB1ZDdGEUVQwDLoQLGoOoSikXYgc04P3YX2le42ELXSLIq1OXy/L8VB7Kkt9BKSuZHnc9BJ6OietDqK0hHdCK6umZ9SS6Fegj1Eqq1ZI/KZdnR2VzsmrKpV4B4jFT/LHx+3r8x8xP7fgW0WrkUy1Qj/84DQj61tK4n9hyULPRDt56846ZKmCLLF7h3NyXtTa9JxhnWG2dUXjro3F2RiI0lHeUo6GzN7MDrjW2MFB8zBEyMvTMhz5pTiqypPZ+617vvg+ujZ0M5iY5BbSvIMZgmiFinxJHwo6J6g68N3ZT++B2ZlpmLV0xxVa05F75aG82tgCVhBccERRrxi8n+BGCSS6umYaXPyf39cuQ7s4+suJ6Ns0DOZS1Qcq/Ta+C8fGCD+wwy/18/gKogtklpwIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=599c96798384a2109befcc65eeaad32a^sys_idNOT IN04f0a2fd8384a2109befcc65eeaad376,80f0a2fd8384a2109befcc65eeaad37b,88f0a2fd8384a2109befcc65eeaad379,c0f0a2fd8384a2109befcc65eeaad37a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">599c96798384a2109befcc65eeaad32a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:30</sys_created_on>
+        <sys_id>04f0a2fd8384a2109befcc65eeaad376</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:14:04</sys_updated_on>
+        <ui_id>d7b39d9e-da46-4412-9242-0443181ed789</ui_id>
+        <values>H4sIAAAAAAAA/9VXXW/aMBT9KyxPmxShpKGM8bSpXaU9tEht1Zeui5zEAW/GzmyHjyL++65jO1BIO4pY1z4h3w/fc6/PccztwiOZ1/d6eScIUHjc+xgEURQE3W6UojBJom6aBEkn8XyPoTGGSIUSimE5QbTU61kcdsOg14liPMFMxYH9FTjlIoPAjMiCovmNjf+qva1L501HhGYCM69/e+d7BRJQRWHh9RcbLjUvcExRgilscq1BtC40In/nBh4kbzekC7hlzMzWgFFjCXwPzxRmGYZSOaIS+94YsQwpLua1RWCUDRhdGUaEKdjR08EzSe5h+16g43IMbaXY+OplbCdlzOmIkxQPCkU4MxYD1Dg5LcfswjSgZ4xzVFLlZgyWUsJ+uNCYNQiLKL8a8emlK3hGWNWedVKeIlqvkFKCJKXCUp8FpnisT3WMioKwYVwIPiFVMmAZt4cUFu2c8ikUlWTI2ijVwNswItQ+A/tpZb5BguguzmEbSAZAhMJpx2bokpeimsokTmkpK4dATJq9vGU1q/h3qVGarm1/sRkRBMhUkEJ9gYQJrlsxRt2GHeGiKW65XPo7qeE4WJEn5SwjGp1ck4QRALSOBxfXfMyF4NPPP9EEmar9oWwneEgYg0kOchfx/sNGDPS27v0hFVKlfPe9BFCZTEc4KyluUNhLl99Pwifrk9t16o3JTUdhxfzAZsUcHkzMAPc/yVmJ8vWp+W/6NA03i7SWXvrxSRIcr85bcqFiM7k17W3LYW+GnhFMswcfmR3AueSBJlsrmT+G1xI01zU2vjZHb/5r8yrpCYCy2MybMEpY9bEHoIfhbfD05fVpgwfV8a9YW9ng7t1mL2op3rrf/5atztXxdweQLvEKELWuDcoG4O5+ddtb6kYHo2509DzqAnFuFzX6emoNA3ZvOn10Lv5ex6PNeGDXWkK4vKupf7JfzfC5NY90zQ1tRs8S5zqzjOf0EYId+MX4iNj8f6nuEaTaerERazwl2RCrVXUXlXE1RfRXk9+yq9ZQ1d6+r8/6gug8qb1uuNIZaAD+PUk4qvVHZQiPje3rIfSNeb/b4RtTeFgNb1eILvMczeA/nMPYCNxeEaSuYTndOeD76yU+b27wjepx838Tf7f2pfDdH2R4qvMmEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">599c96798384a2109befcc65eeaad32a</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:30</sys_created_on>
+        <sys_id>80f0a2fd8384a2109befcc65eeaad37b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:30</sys_updated_on>
+        <ui_id>4d0e214a-4cb5-494f-ac8e-f6fe4b881547</ui_id>
+        <values>H4sIAAAAAAAA/+1UTYvbMBD9K8HnxPgrn7dCGuihu7Ate9kuRpbGiUCWXUnOJg357x3ZsjcbdrdhCZRCfTEzmnnz3uihh4PHmbfwEmBBOA8nNA7jOAqCaJaE2STOwojFBCD0hp4kBWClAloqhvGWiNomDocMW+N5Mh0l8ZSNEhhPR3OWsVFEs4jO8ojBJPa5geJ4xD7GdSXI/t61Y4ZuuGAKpLd4eBx6FVE4yYDyFoezI7OvIBUkA4GNy5LWBUgz+LJEjEtVdN13nYxzWXYGxsyhp9wm8cjyCYOhBzsDkgGOy4nQMPQKIhkxpdp7C6NqTCgg7FaKfV+x4dK0Sguy0/wX4ieBrcsBpVG3hT5M3Ya65ZScwm1leCnbjCGZ6DZXirqQN60Eu1vISS3MyW5rjXhQWcqWRMsw/7Ypn+66eSsuG3WOrSgpEX1EjFE8qw1oex0goFlKQaqKy3VaqXLLm2akUvhrgYGfi/IJZ2q+lj6hlrePCyL+CvPLJn1PFLciviIMNh8b8enP2s5tZTjCaaO5EZw2F4WlmipemU8IvAVH8zh0Ns7G7xmAzp/v+wTz2cq7NJyEwSyJU9ja6YH79+Y48+5nezrorfQxH3+3TAY3LZNLVbxofkOVc/KLnDPy+GpGnv0lIztG/5iT/+TfIHr3ATu56cay+sS72hBT6x91EMRM0w2wWsArln2r7IPehQLBDQxa+OHFKjqAFQfB9CuyOvO6AenWDehf4qs5OJwEzff/Qb7ig/z4G+oXfJ1ZCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">599c96798384a2109befcc65eeaad32a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:30</sys_created_on>
+        <sys_id>88f0a2fd8384a2109befcc65eeaad379</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <ui_id>64dc158e-a6ee-4579-97b9-9c94a2e8894b</ui_id>
+        <values>H4sIAAAAAAAA/8WWW0/bMBTHv0qU56aK4zQX3iYxJKStTMB4QSjy5Zhaci4kTqGr+t1nJ+kVCoix7anySXx8/v9zfnFvl67k7okb8oTzVCBfIIR85E9QgBJIgLI4iiFI3JFbkBzMmzWwsuZmPSeqtYHlkvooxWkYeyGOuRfCJPZSTrkXMBqwRAQcIjyWGvLVyuzjsqkUWdwM202EzaTiNRTuye3dyK1IbU7SULsny4NHelFBpggFZTaelqzNodDO+anJ8V4V692XaxmHsuwZZs2H7Jm0QfPI1oNGLjxpKDiY0wRRDYzcnBSc6LJebCI1EH5RqG1gJgvdK83JUyN/mfw4sO8JMNLY4MJmmQ0Orc0pJYOLSsuy6COaULV2rlRtXkx7CdZbEKRVesfbtjH5oLI12yJ03ZqCxNWsfLxcn3cmi07dUK0qGVGbFdG6lrTV0Nh2tPL6JXv68LcXGwMKuhdzUlWyuM+qupzL7jxTfT6+V2YxFqp8NGU28r4YE2aljo2pZHxm4qdd+IbU0ur+btKYzfbMn4V8aOHcNp4jP8apz7w4mGAv9BnxaMKpR2ggJmEYJRFF7qrzOHtorbzercGXrLO28zXr5sG82rBaVvqLKWYOgxur0UBLgl6bMxxsx2on55aYpwxFyE9CnMHcnu4Pv5sZPEDkq33qbCb2Y7hc20qcaV/Je1XsbT6iagBmLzbwEnwaL4n/f3gZKvpzYPbs2edlrzP/BBdGKRUUUg9RxrwwhsRLAhJ7MPEZFgH2/Vi8ictbkISvj9fOlVKUWgrJSNeyLSZxOBEoinmCk5AEyE8pCMaiCQAhHKfkOShTm2jh/FCkKKB2RFk7PTtXbAa8VcAdUZe582GINiOwuXHeFrneO91X+bL2AaZ655yBJfw6S/2H/SNXT7No+s8P5ESqrJ+nI3wdaDjO2rGkewASIYBp4JmQoLiZqv47+A/usT3XDZwm2zMsd3v996i8ft7wBnQ2GJDZBJmZ45zYNnZaDmEOUwQxDhIvjQIDM+CJRznGHjJwG1TA/P/6jLvv7jdf6I8zKwoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">599c96798384a2109befcc65eeaad32a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:30</sys_created_on>
+        <sys_id>c0f0a2fd8384a2109befcc65eeaad37a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <ui_id>b2946d9f-600c-420c-9209-9d8ce5e4740b</ui_id>
+        <values>H4sIAAAAAAAA/8WW207cMBCGX2WV680qjrObhLuqFAmpXSSgvUEo8mEMlpwDibOwRbx7x0n2yFGU0guEPIln5v89X7wX956W3oEXyUTKVJFAEUICEkxJSBJIgIt4FkOYeGOvYDngmzWIspa4XjDTusD9PQ9IStMo9iMaSz+Caeynkks/FDwUiQolzOhEW8gfHnCf1E1l2PLXsB0j4lobWUPhHVxcjr2K1VjJQu0d3O89sssKMsM4GNx4WIo2h8KOjg8xx1tVrHafrmTsy3I1cC2H7Jl2QXzk+iFjD+4sFBKwmmKmgbGXs0IyW9bLdaQGJk8Kswlc68L2SnN21+jfmJ+G7j0FKE0MLqyX2eDQypxSCziprC6LPmIZNyvnStPmxbyX4LwFxVpjt7xtG8wHlevZNWHrFhtSZ9fl7emq3pEuOnVDt6YUzKxXzNpa89ZC446j1edP2dOHvz95MGCgezFnVaWLq6yqy4Xu6mH3+eTK4GKiTHmLbTb6qpgw4aRO0FQ2OcL4YRf+xWrtdP/ANLjZ1fxZ6JsWjt3BSxLENA2EH4dT6keBYD5PJPcZD9U0imbJjBPvofM4u2mdvN6twZess7bzNevmAV9tRK0r+wWbWcDgxsN4oCUhL80ZDTdjtZVzQ8xdRmYkSCKawcJVD4b/6xncQ+SbezpaT+z7cDl3nYzmfSdvVbGz+RlVAzA7sYGX8MN4SYL/w8vQ0d8Ds2PPLi87J/MpuAjOueKQ+oQL4UcxJH4SstiHaSCoCmkQxOpVXF6DJHp5vLaulKK0WmnBuiPbYEKDOIAwlglNIhaSIOWghJhNARiTVMSPQZm7RMvR1xLnTxduykYK/3p+zsQ1yNbA+xFaD8D6vnld4mrvfFfj08oHlOqtOgNJ9GWS+s/6ey6eZtn0Hx/ImTZZP03P0LWn4XnSnku6gx9TCoQFmSkNRuJM9V/BT7jFdlxHNDHbIyi3z/rfMXn++MAbsNlgQOYSZDjBOXPH2GnZRzlKCcQ0TPx0FiLKQKc+l5T6BNFGUAB/fX3EzXf5B1dMexcpCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=599c96798384a2109befcc65eeaad32a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=599c96798384a2109befcc65eeaad32a^sys_idNOT INccf0a2fd8384a2109befcc65eeaad377"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">84f0a2fd8384a2109befcc65eeaad377</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">599c96798384a2109befcc65eeaad32a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:30</sys_created_on>
+        <sys_id>ccf0a2fd8384a2109befcc65eeaad377</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:14:23</sys_updated_on>
+        <ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</ui_id>
+        <values>H4sIAAAAAAAA/51Sy27jMAz8F50Twy+kcW4FFgV62BZoi14WhUFLdCKsLKmSnNQ1/O9LxU5a9Lgnm0NyOCNyZKYPtg/+xdx6L/ea7f68rZjUEaP/kWnokO2YDNh5tmJHUH2Mx1HcNEUlKlwLKDfrsszydZWX+TotyyLbZihutlXyhNw44aeJWoX0VsHw+v8M/CCVcLiItOBIW0DHduOPVBgs1goaVDRoYaB+KSjMKtFWWVrxIt8UeZrm2zJrNkWT5aIAFBuqu3TeL6Z/vEFkp9BdeekTVeTpiuFHQC2QBrWgPK5YB1pAMG5gu+B6AhyCeNRquFYcpA5Ex2Lth5efxJ2laSxskRxxnJPXsF4ecob5wUiOjzZIo2ckQKOWHm5U3+mHWX5cAbbQq3BZASG9Jz60UXNUsUhqnw/m9HQZeCf12d+SVIaDukYQgpNNH9DHNaDCjojqDqyVel9bZ47y3ExaumSvKEhaZU40NJ5bAjwKT+iJILkj/NcZfgUno4vfREPN09l9/d7HubOPRXE9m6YCz5204ZbojriIm97ivc5Mfj4MgVx6GvgSsfvLlcfEQEuW/Dt0Mu5vlPqFTf8AEBOUWy8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=599c96798384a2109befcc65eeaad32a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=599c96798384a2109befcc65eeaad32a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_599c96798384a2109befcc65eeaad32a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_599c96798384a2109befcc65eeaad32a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_599c96798384a2109befcc65eeaad32a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_599c96798384a2109befcc65eeaad32a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>flow_to_automatically_confirm_event_details_24_hours_before_the_event_date</internal_name>
+        <label_cache>[{"name":"b0193947-437d-4e57-9dbd-2cb2c8f2de63.item","label":"2 - For Each➛Event Record Record","reference":"x_1610843_event_0_event_record","reference_display":"Event Record","type":"reference","base_type":"reference","usedInstances":{"64dc158e-a6ee-4579-97b9-9c94a2e8894b":["record"],"b2946d9f-600c-420c-9209-9d8ce5e4740b":["record"],"4d0e214a-4cb5-494f-ac8e-f6fe4b881547":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"d7b39d9e-da46-4412-9242-0443181ed789.Records","label":"1 - Look Up Records➛Event Record Records","reference":"x_1610843_event_0_event_record","reference_display":"Event Record","type":"records","base_type":"records","usedInstances":{"b0193947-437d-4e57-9dbd-2cb2c8f2de63":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Flow to automatically confirm event details 24 hours before the event date</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Flow to automatically confirm event details 24 hours before the event date">599c96798384a2109befcc65eeaad32a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>21f0e2fd8384a2109befcc65eeaad387</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:14:24</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_variable_value action="delete_multiple" query="document_key=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=21f0e2fd8384a2109befcc65eeaad387^sys_idNOT IN61f0e2fd8384a2109befcc65eeaad388"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>21f0e2fd8384a2109befcc65eeaad387</id>
+        <name>Flow to automatically confirm event details 24 hours before the event date</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>61f0e2fd8384a2109befcc65eeaad388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=61f0e2fd8384a2109befcc65eeaad388"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=21f0e2fd8384a2109befcc65eeaad387^sys_idNOT INedf0e2fd8384a2109befcc65eeaad392"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">21f0e2fd8384a2109befcc65eeaad387</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>edf0e2fd8384a2109befcc65eeaad392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STUvEMBD9K5LzWtJdP3sTZMGDCipeRMo0me4GpklM09Uq/ncnbVxULLnMm5k37z369CEIGiRRiQfToVgIYyMGC/QwemR0Q0ZjHedeB1ZDdGEUVQwDLoQLGoOoSikXYgc04P3YX2le42ELXSLIq1OXy/L8VB7Kkt9BKSuZHnc9BJ6OietDqK0hHdCK6umZ9SS6Fegj1Eqq1ZI/KZdnR2VzsmrKpV4B4jFT/LHx+3r8x8xP7fgW0WrkUy1Qj/84DQj61tK4n9hyULPRDt56846ZKmCLLF7h3NyXtTa9JxhnWG2dUXjro3F2RiI0lHeUo6GzN7MDrjW2MFB8zBEyMvTMhz5pTiqypPZ+617vvg+ujZ0M5iY5BbSvIMZgmiFinxJHwo6J6g68N3ZT++B2ZlpmLV0xxVa05F75aG82tgCVhBccERRrxi8n+BGCSS6umYaXPyf39cuQ7s4+suJ6Ns0DOZS1Qcq/Ta+C8fGCD+wwy/18/gKogtklpwIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=21f0e2fd8384a2109befcc65eeaad387^sys_idNOT IN21f0e2fd8384a2109befcc65eeaad391,29f0e2fd8384a2109befcc65eeaad392,61f0e2fd8384a2109befcc65eeaad390,69f0e2fd8384a2109befcc65eeaad391"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">21f0e2fd8384a2109befcc65eeaad387</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>21f0e2fd8384a2109befcc65eeaad391</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <ui_id>64dc158e-a6ee-4579-97b9-9c94a2e8894b</ui_id>
+        <values>H4sIAAAAAAAA/9WWXW/bOgyG/0rg6ziwLCe2ezesKzBg6w7ant0Mg0FJVCNA/pgsd80J+t+PZDufzbp1WwfsKhAliuRLPnI+rQMlgrMgEZkQuSSRJIREJJqTmGSYIePpIsU4C6ZBBSW6kwZ5bYRb34HuvGG9ZhHJaZ6kYUJTESY4T8NcMBHGnMU8k7HABZ0pi+XDg/MTqm00rD6O7s7Cl0oLg1Vw9unzNGjAuEgWTXC2Ptr60VQ1MNTu6NUm1+Pc7arxa1HzrsTKFmpjfDd6no87k7fnbsc5+XTINMB7i5VAl4cE3eI0KKESYGuz2loMgvhQ6Z1hqSo7FFrCfav+c5Fp7M9JdJXxUYTtshgFGszyHCxcW9Nx25mtXrXi2A6aCJTQaft63zYc+NBYVVeDiwWmN9617srqclAk2F6w14+udUlg4wv1mbvgrgp5vay/Xm2SvFBVL8lYoq456O0KrDWKddansw46dXNK7cF8Wm/U2B8soWlUdVs0pr5TfTyXfTm71W4xk7r+6tJs1W01A+5LnblOwOzC2c9780cwytf93l3jnH3Mfyv1pcO3fo4EiVKaRzxM4zkNk4hDyDLBQmCxnCfJIlswEjxMg3bVvtbQtjvFXKuKL50veNBvVKroxe6VLvqB887cqMa+cund4ajPw3RkLiNPDTKNd3O7d+eOu/uCLEiUJbTAOx89Gn+3Q34E2hu/O9ki8TzofiDXDXQ3/aidzn3k7pHt3b7v5HLYGKmLn0ndMK4noMuivwi6saxfp+5A60PoDtT+I8xxxphkmIeEcR4mKWZhFkMa4jziVMY0ilL5E8x9j7Tk6end+7pVtVVSceibuGMtTeaSLFKR0SyBmEQ5Q8n5Yo4IIGgOj2m79BetJv9oqCo0E1mbyQDgNV+i6DSKiTR1OXn+5+/7tWxIvDws5nSJI5I7MA6JvNqzj0DSp4Ec+PuZr6Dr+vCEYQlKF8OAfYPSo9p+M7HfyuQAY5ASuUVRSIVauEkcHuAX+aTKawTDlxc+ku/hwOwh8geNdeC7GI+Q32/nyxF/83imWrTFKEvhLygcESX4iegrPH4okpxgSuMszBexeyiQzkMmKA2JezgcdOj+VL7Mx/nz/9ZX5FUSCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">21f0e2fd8384a2109befcc65eeaad387</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>29f0e2fd8384a2109befcc65eeaad392</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <ui_id>4d0e214a-4cb5-494f-ac8e-f6fe4b881547</ui_id>
+        <values>H4sIAAAAAAAA/+VVTW/iMBD9K8hnQPkqBW6rspVW6rZSu+qlrSLHnoAl52Nth5ZF/PcdJ06IWLZLpV7Q5oI8M8/z3mQeedoSwcmcRMA9f+ZPWOiHYeB5wTTyk0mY+AEPKYBPhiSnGWClAlYojuc1lZUNbLcJQsNZdDmKwks+iuDicjTjCR8FLAnYNA04TMKxMJDtdojjQpeSbh4dHCNsJSRXkJP508uQlFRhJwOKzLcHqVOpSpqAxNL7lushd7Mp7ZkXrMogN7FogzcOuXCZwbcFZhBk6fjekMCbgZwDEkmp1DAkGc05NYXakLlRFQYUUH6Xy01XsRK5aYRm9E2LX9g58mxdCqiMuSF0x9gNqAmnC2roA97MTKW6eRWCgW5mwiGllTRX/VhTcFcaUeQNxNBEtuhCVll+20yEdBf03kelkQSUVqdl3shKH1bF631L8lrk9UicRFkwKrsTNUaJpDKWzpaAhHrGGS1LkS/jUhVrUYORSjZeSjyMU1m8Yk8tlvmYMst7jFOl42uML+rwI1XCiviO1yB4NyR6o68k1XovBWcY/6wsk0aYkxDXU6hHENebYMFMidJ8wVZrcMR3Q2eG5OK9DWOz/UL17twb4i32J743jcIY1ra753677TtwwFebHXS7+jE3nMC1dcOPegeOc3eG+CN208cObpuEs8PFp9lhek52cDLO3g//coEXvPs/29ukevF1zwHaUFPp58rzQq7ZCngl4cji/63sYw44gWfrgGsBkusjxNv1hwz5GYgbIQcWcMnBo0t2X4VP84E/8ernjNzw33wcXn4DpL9WGisJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">21f0e2fd8384a2109befcc65eeaad387</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>61f0e2fd8384a2109befcc65eeaad390</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:14:24</sys_updated_on>
+        <ui_id>d7b39d9e-da46-4412-9242-0443181ed789</ui_id>
+        <values>H4sIAAAAAAAA/+VXUW/aMBD+KyxPm4RQ0lDKeNrUrtKktkht1Zeui5zEAW/GzmwHShH/fefYDhGkFUjp1GpPyHdn33fn77uY+5VHUm/kDbO+76PgeHji+2Ho+4NBmKAgjsNBEvtxP/a6HkMzDJEKxRTDco5oodePUTAI/GE/jPAcMxX59lfghIsUAlMic4qWdzb+m/Z2rp03mRKaCsy80f1D18uRgCwKC2+02nLtC5OiGFMIvbU4t2CrZV4to9JnbBf1bZ0r4wCIGorf9fCjwizFgCFDVOKuN0MsRYqLZWURGKVjRjeGKWEKTvR08KMkT5B36Ou4DENVCTa+ahnZRhlzdoYUulGiSFQhbGgy5STB0vQjxRkqqDqt20zAOFeEM7PFlG12c1rM2JVph1cd4O4FLIUEEDjXhWrktozsZsoX1w7lOWFlT6yT8gTRaoWUEiQulMaz8jDFM82EGcpzwiZRLviclJsBy6w3obDoZZQvIKkkE9ZDiQbeg76i3jnYz0rzHRJEV3EJx8BmAEQoMCQyVyh5IcpWzqOEFrJ0CMSkOctbdz25lKcUSbmpHFoe/Sk0btMHW3Fkmqa3JILk6iscMcdVccaoC7NNXTXFrdfr7l6aOvY35Ew4S4nGK2vCMjKCZuDx1S2fcSH44ssvNEcm62giezGeEMagt+PMRXz8tBUDtdW9P6VCqpAffhQAKpXJFKcFxQ06/dfp2xwEZW/dIDitN7ep4XYk7Ngumg6wIyFobSRAHe9pKEDytzcTDle5aUGz1CsBJycvkux4wyfJhYpML2sK3hXVwTzfA4Lj+VgzsxMvn0NlaZ4RTNOmL9+5dmx9+Y7+zy/fmyQ5AEojc3uEUcLKZwwAfS32+y+P2M9bPCvpteF+aYPvwK4GUEfxztPBStgDjlPCDeTu3Bo8DRDdvC8psz3rndEKIGxNAOFROwJYVWVWjWzouXu56tt08U86Hm3HAwVrG4J1k8AOyhkcmvNovSvg8CAF18lmPGfPcK7lJ+4ziuy+5giYwlabLzL6jRYknWC1ye6iUq4WiP5u8lvGRe6iyvLaey5XU6T/omwHwUaioBT40yjh8uqv4ACeR7szJOga82EjZA8srh2X6BH+ozowjQjtGAGl40l5N/U58r2yWpL3W3wwvtkvqbusRg26O3sX/zLbE8LDX6z5iTRjEQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">21f0e2fd8384a2109befcc65eeaad387</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>69f0e2fd8384a2109befcc65eeaad391</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <ui_id>b2946d9f-600c-420c-9209-9d8ce5e4740b</ui_id>
+        <values>H4sIAAAAAAAA/9WW207cMBCGX2WV680qjrObhLsKilSJggS0N6iKfBizlpwDiQNsV7x7x0n2yJZCWyr1AiGPPZ6Zf+Zz9mbpaekdeZFMpEwVCRQhJCDBlIQkgQS4iGcxhIk39gqWA56sQZS1xPU9M60zLJc8IClNo9iPaCz9CKaxn0ou/VDwUCQqlDCjE20hf3pCP6mbyrDF18EdLWKujayh8I5uvo29itUYyULtHS33tl6bqmEcDB69XOW6n7tdVG4tS9HmUNhMr4xng+fJsDP6dII76OTSIWMPHi0UEjAPxUwDYy9nhWS2rBdrSw1MXhRmY5jrwvaF5uyx0d8xMg3dOQVYmRhEWC+zQaDerE6YZVe2boVt67VepRbQ9JpIUKw19njb1h+4qKwui97FMm5W3qVp8+K8V8RbX7DVj7bBJKByhbrMMThWoa7m5cPlKslTXXSSDCWaUjCzXjFra81b69JZeq2+PqR2bz6sNxjoDuasqnRxm1V1ea+7eJh9Prk1uJgoUz5gmo2+LSZMuFIn2Ak2OUX7SWf+ymrt6v6M16Czi/ml0HctfHJzJEkQ0zQQfhxOqR8Fgvk8kdxnPFTTKJolM068p7HXLJpjw5pmoxi2KrtrXcG9foNSWSd2p3TWDZxzFrWu7AdM7x4GfZ7GA3MJeWmQabiZ2607N9w9ZmRGgiSiGdy76MHwfz3ke6B9dLujNRJvg+4Vua6gu+5G7XDuA3fPbGfbvqPzfmOgLnwjdf24HoAuCf4j6Iay/py6Ha13odtR+58wJzjnikPqEy6EH8WQ+EnIYh+mgaAqpEEQq99g7lekRS9P79bXrSitVlqwrokb1mgQBxDGMqFJxEISpByUELMpAGOSivg5befuosXouMQp1oWb1ZHCvx7CKzEH2Rp4O4evqGTF4fluKYcLHIDcYLHL4+WWfcCRvoxjT9/vfAOx5/0DBjnTJuvH6yeM7tX2l3n9WSY7EDOlQFiQmdJgJM5h//y+ywdVXQGrxfzURXI97IndBX6nsYg9xngG/HY734/36+cz1YDNBlkyd0GGLOTMTURX4f4zEaUEYhomfjoL8ZkAOvW5pNQn+GwgcoA/Kd/n0/ztB3GxkLgQCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=21f0e2fd8384a2109befcc65eeaad387^sys_idNOT IN2df0e2fd8384a2109befcc65eeaad38e"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">84f0a2fd8384a2109befcc65eeaad377</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Flow to automatically confirm event details 24 hours before the event date">21f0e2fd8384a2109befcc65eeaad387</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_id>2df0e2fd8384a2109befcc65eeaad38e</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:14:24</sys_updated_on>
+        <ui_id>b0193947-437d-4e57-9dbd-2cb2c8f2de63</ui_id>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miC+lIW9Vq0qV7q5SWvXlVEWLvSTWGZuzTVIO8d9vHQit+tgn2PHu7MxgBmY633bevZhb5+RBs+3vt4hJHTB6H5iGBtmWSY+NYxE7gepCPQzipspLUeJKQLFeFUWarcqsyFZJUeTpJkVxsynjHXJjhRtHGhXStQr61+8z8KNUwuIssgVL2jxath2+HElBC9JS1GWalDzP1nmWJNmmSKt1XqWZyAHFmggVVKio9XF298Ws79tQ2knCDPyYZ3YLSo8gIksihu8etUBaX4NyGLEGtABvbM+23nYEWATxpFW/dByl9kTHQu+7k/9oY5okobFGMsRxOlzK/ZzjBNf34OGZqLnv7NzKj0ZydFMUAmvolL/7jE0NT62XRk8jHip1nTaqa/SvKQm2EFw/GyGdIxHYBqNB+uyjfj6a8+6q8kHqSyjzoTIc1FKB91ZWnQ96BoYKGyLaN9C2Uh/2rTUneRkmLU18UFTEtTJnWhquaAw8CI8pV4gfCL+/wK9gZXDxk2hoeIyY692dAuc+vFCI+79dUDI5mz3spxjCCLey9be04ISz3PEt3PqJe8mUS0cSXgL2eP1XwkFPN0jyz9DZ2D9B/Ac2/gdsFgdwdQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_21f0e2fd8384a2109befcc65eeaad387"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>599c96798384a2109befcc65eeaad32a</sys_id>
+        <latest_snapshot>21f0e2fd8384a2109befcc65eeaad387</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=599c96798384a2109befcc65eeaad32a^sys_idNOT IN2df0e2fd8384a2109befcc65eeaad3aa"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>599c96798384a2109befcc65eeaad32a</plan_id>
+        <snapshot>21f0e2fd8384a2109befcc65eeaad387</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 19:02:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2df0e2fd8384a2109befcc65eeaad3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 19:02:36</sys_updated_on>
+        <trigger display_value="">edf0e2fd8384a2109befcc65eeaad3a8</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=599c96798384a2109befcc65eeaad32a"/>
+</record_update>
