@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=242000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>event_budget_approval_notification</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Budget Record","reference":"x_1610843_event_0_budget","reference_display":"Budget","type":"reference","base_type":"reference","usedInstances":{"d50480f8-8410-490d-8505-d2168106286c":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>af727c4a8340e2109befcc65eeaad3a8</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Event Budget Approval Notification</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>bf727c4a8340e2109befcc65eeaad3cd</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:34:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e89178c68340e2109befcc65eeaad3b7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Event Budget Approval Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_hub_flow_e89178c68340e2109befcc65eeaad3b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:28</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1610843_event_0_budget">statusCHANGESTOapproved<item display_value="Approved" endquery="false" field="status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="approved"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bf727c4a8340e2109befcc65eeaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:28</sys_updated_on>
+        <table>x_1610843_event_0_budget</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e89178c68340e2109befcc65eeaad3b7</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:28</sys_created_on>
+        <sys_id>7b727c4a8340e2109befcc65eeaad3ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:28</sys_updated_on>
+        <trigger display_value="">bf727c4a8340e2109befcc65eeaad3cd</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e89178c68340e2109befcc65eeaad3b7^sys_idNOT IN7b727c4a8340e2109befcc65eeaad3ce"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e89178c68340e2109befcc65eeaad3b7^sys_idNOT IN649178c68340e2109befcc65eeaad3b8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e89178c68340e2109befcc65eeaad3b7</id>
+        <name>Event Budget Approval Notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:34:25</sys_created_on>
+        <sys_id>649178c68340e2109befcc65eeaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:34:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=649178c68340e2109befcc65eeaad3b8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e89178c68340e2109befcc65eeaad3b7^sys_idNOT INae72f80a8340e2109befcc65eeaad379,e2727c4a8340e2109befcc65eeaad313,e672f80a8340e2109befcc65eeaad373"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">060fb5dc19c312104f3423cebaaa8527</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Event Budget Approval Notification">e89178c68340e2109befcc65eeaad3b7</model>
+        <model_id>e89178c68340e2109befcc65eeaad3b7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:22</sys_created_on>
+        <sys_id>ae72f80a8340e2109befcc65eeaad379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ae72f80a8340e2109befcc65eeaad379"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Event Budget Approval Notification">e89178c68340e2109befcc65eeaad3b7</model>
+        <model_id>e89178c68340e2109befcc65eeaad3b7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:22</sys_created_on>
+        <sys_id>e2727c4a8340e2109befcc65eeaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e2727c4a8340e2109befcc65eeaad313"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Event Budget Approval Notification">e89178c68340e2109befcc65eeaad3b7</model>
+        <model_id>e89178c68340e2109befcc65eeaad3b7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:22</sys_created_on>
+        <sys_id>e672f80a8340e2109befcc65eeaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e672f80a8340e2109befcc65eeaad373"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e89178c68340e2109befcc65eeaad3b7^sys_idNOT INea727c4a8340e2109befcc65eeaad31d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Budget Approval Notification">e89178c68340e2109befcc65eeaad3b7</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:22</sys_created_on>
+        <sys_id>ea727c4a8340e2109befcc65eeaad31d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+1aW3OjNhT+KwxP7UzaAeNr9imbSzcz2aTjuNuHTEYjkLCZYuEFQeLdyX/vERIYMPiabUPap4wlIZ3vnO985yDy8F33sU19/VSfYNun+onuMU5Dhv3JckFhmIthxPBczM0xI5gH4VI/5WFMT/QgJDTUT80TPcF+TO+X0TWBh2Bp+oR6XFfT8PsZmX3TGHYtRBPKODKQHZMp5bCEeNHCx8svauXHbHyBQ9iLi3O+687M80lImX768Ai2isNMQrDZoYZjmVanYxidYde0+5ZtdoiFKR7CFlWMFeN4DdQVMvrMKSMUjnKxH9EaL4QUkzvmL/MVM3CidMMcP0feN9h9aIh1LgXbHSrn8p9IQZfDzizwHHq34F7A5Ii0U04Gfjxnt9J+4TTq4tjnmdNgJI5gP7oQJgsjlEXu/Sx4GmcHXnksRacm/cDBfv4Lcx56dsxpJBzuej64HknfREEcptaPL8/vxhfoz7PJ+afLMRpf3k/G1+eTywv9JcWFvsZiR2mhsgVJOC95pK886osAsnhugzUneuSE3oKfOdxLqDLn5WTF0DBm6GlGGQKIIfK9iK/Tdep7hGZzhUApbFlUDaORsbWnJCv/Vmi6A0Etd0h6vcHAGQA5LcNwu9TGZrfTw6NB36L9AkFrD99kGK+BXQS5ibxqZBf2dg2jwt9oGaWGNPD4Dzn1triMSYLhCRETkbg7cXVXTkaUc49N1xkpXZD74kbE6PQBEivDyQKG0mewPAQA3qjdRVi0ccw0Nwi124D9cr1ap93TKBJuhfXXczxVLnN/z9iYQlbcSXCI0ByJoM1iG4FTplMgkccWMUe23R/1aL9JQHslx6SZAFs/6Prji4gF9anDCwRzIfSFX589sBL8snJdDnwX0IJH2rtCbQd8VoSbIf0I4yWkkKhNMY/aBf/xWCleJVdS9uL+YtwdWqMeca16MR506sR4dXyzYbyS7T9EhPdrIaJUZ/z9tCRpVKUMUVH+ds3VpDbl1Y6d4o6HpkOFGGprS3BP1ZXz/51ScEqlMlt7leYs++ToRTkJDzW2HcXe9YMn4MABdd7Gzl/TMIgZWZN/2FPzmLZaof2kfPtzu5S+WOiAA3Qz3vKK9qA8pp6t+JMlJ2bLwyoZdcig3+0brmlYUMns3mhkO7jjuoP+gBqkUslWB9da8+br1w6JktRlWp1CN5IwqeNursiba8nbMPAoXVdUrJV1OdcOkYYynXN2f6FOt6xqViCKesA0Jw4BJNeyu6MWyVZRnFNvr0HM0YlSnXlQQv0PvXKU2ZNUWLG/UPcdYnbtQd8YCNQg1jYo9sDoYZeAbI+silCXj2+0qxWC3ZQ1Vac2aeBWSiZlPu8h1f+maUeJdE7Exu67CdrbF+/zgBGPy9ejqmxnU5F+YG47hc2z4EQc8zg6/3R2+9vl/eQOLxZhkKT5tS2rbXuECcUNatYfFLK6iKrGFl4D8B+5w92Wz691byu/khzMs3lAqH+x2k4vlRXhrcxDKFjAmyV4Bp7Tv5zdqLh+UH+vxnefP+SxhueeMOMR4gHChKCC/3cktPTJ+gcNfc9PGcfcHQtTKArcYjG/CDSY0OAQzXM15S2QJnup8RmFhtKH1hIO1MTpLSvsxSZmHXl+9fKucctWfO0GGYY19UmmRcCOvhyupNCxr9WOO7LJyGr4Wtdr/lrXfEtcmX7zndve+pHUydHGq9H99q3uWXs5WqB/mQM73gW/Y9Q/7FKgxoq332QKoycyDAeU3IA5lc+VTovvAWLmfY0pcmaYTeU7fobrCsJKsTPT5BJNLmkvUuw/4WWkV5sFSEmR9epVCQYg/5nU6ZYCpQkNl2uRFINavIBa0rIYbu4PNvznmbI44vBGQKfLkrA6h93kOOao17HIEHCPrHXcZqE3KItMs02NzcCW/zzb0gwUjlex596cpgUnf8/R5pg7MxqdaECQ9M4grUdeGPF09a+v11EokawEoK5WNspO0qRYddVxW2onVVHIq2XVlHLeJJUcU491t35mfv/wj+oxsoysbTKU9163sTi0j3j8Gyg5T6IzKwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e89178c68340e2109befcc65eeaad3b7^sys_idNOT INae727c4a8340e2109befcc65eeaad32b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Event Budget Approval Notification">e89178c68340e2109befcc65eeaad3b7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:23</sys_created_on>
+        <sys_id>ae727c4a8340e2109befcc65eeaad32b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <ui_id>d50480f8-8410-490d-8505-d2168106286c</ui_id>
+        <values>H4sIAAAAAAAA/8WW207jMBCGX6XKdVPZSdqk3O0KISEtRWKBmxWKHHtcLDkHHKfQrfruO07S0gIFxLLspcf2HP6ZL86vlaeEd+RFIhFiKimRlFJCyZgGNIEEMh5PYggSb+gVLAc8aYCXRuB6wXTjDKvVVSWYBZHSEW+MgcKu17gvVF1ptrzuj6GF3yotcN87+nUz9Cpm0KMF4x2tnmzZZQWpZhlovHhc8iZHp4PTY/Tx3mw3ty826T5N38XAtei9p8oZccvlQ4cePFgoBGA0yXQNQy9nBVZZmuXWYoCJ80I/Gm5VYbtKc/ZQq9/oPwzcOQlYGu9V2C7TXqGNOKXicF5ZVRadxbJMb5QrdZMXs64Epy1I1mi7o21Toz+oXM4uCWsaTEj+vC3vLzbxTlTRVtdnq0vO9HbFrDUqayzUrh2NunxJns7848XGgIb2YM6qShXztDLlQrXxMPt8NNe4GEld3mOatZoXI8ZdqSMUlY1O0H7cmq+ZUa7uM3SDl13Mq0LdNXDqGi8oicMp4X4cjEM/Ipz5WSIyn2WBHEfRJJlk1Fu3Gqd3jSuvU6vXJW2lbXVN23nAozU3qrLfMJkF9Gqshz0VCX1tzsLgcax2fD6S8ZDSCSVJFKawcNFJmjViDvY5HN839o8hcumiD2Zd9Pdmvnf5QCU9JHu2npHg0xhJyP9hpM/o7yHZk2efkb3OfAkiPMsymcHUpxnnfhRD4icBi30YEx7KICQklm8i8hYY0evjtfNcFKVVUnHWtuwRDULCIOaEJWFEIKBkmoHkfDIGYEyEMX+OyGzH0cCWgzNWsDmYgSzNoMNqgHqY8sMQbUdg+8q8XeTm7my/ypdr72EyO3F6lsLXWeo+5h95bupl3X16IGdKp908HeDrSQ2HWTvkdA9AJiVw91MgFWiBU9V9A7/g7dpTHeFEb8+w3O31v6Py8nnDa7BpL0DqHKQ4vjlzbWxreQpzNKUQh0HiTycBwgzh2M9EGPoU4UZUQAbiM967mz/Gmg8aBwoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7^sys_idNOT IN2a727c4a8340e2109befcc65eeaad312,a2727c4a8340e2109befcc65eeaad315,ae72f80a8340e2109befcc65eeaad378"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:22</sys_created_on>
+        <sys_id>2a727c4a8340e2109befcc65eeaad312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:22</sys_created_on>
+        <sys_id>a2727c4a8340e2109befcc65eeaad315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:22</sys_created_on>
+        <sys_id>ae72f80a8340e2109befcc65eeaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e89178c68340e2109befcc65eeaad3b7"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>event_budget_approval_notification</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Budget Record","reference":"x_1610843_event_0_budget","reference_display":"Budget","type":"reference","base_type":"reference","usedInstances":{"d50480f8-8410-490d-8505-d2168106286c":["record"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Event Budget Approval Notification</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Event Budget Approval Notification">e89178c68340e2109befcc65eeaad3b7</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>af727c4a8340e2109befcc65eeaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=af727c4a8340e2109befcc65eeaad3a8^sys_idNOT INab727c4a8340e2109befcc65eeaad3a9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>af727c4a8340e2109befcc65eeaad3a8</id>
+        <name>Event Budget Approval Notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>ab727c4a8340e2109befcc65eeaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ab727c4a8340e2109befcc65eeaad3a9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=af727c4a8340e2109befcc65eeaad3a8^sys_idNOT IN6f727c4a8340e2109befcc65eeaad3aa,7f727c4a8340e2109befcc65eeaad3b4,b7727c4a8340e2109befcc65eeaad3bb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Event Budget Approval Notification">af727c4a8340e2109befcc65eeaad3a8</model>
+        <model_id>af727c4a8340e2109befcc65eeaad3a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>6f727c4a8340e2109befcc65eeaad3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6f727c4a8340e2109befcc65eeaad3aa"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Event Budget Approval Notification">af727c4a8340e2109befcc65eeaad3a8</model>
+        <model_id>af727c4a8340e2109befcc65eeaad3a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>7f727c4a8340e2109befcc65eeaad3b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7f727c4a8340e2109befcc65eeaad3b4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Event Budget Approval Notification">af727c4a8340e2109befcc65eeaad3a8</model>
+        <model_id>af727c4a8340e2109befcc65eeaad3a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>b7727c4a8340e2109befcc65eeaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b7727c4a8340e2109befcc65eeaad3bb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=af727c4a8340e2109befcc65eeaad3a8^sys_idNOT INbf727c4a8340e2109befcc65eeaad3c6"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Budget Approval Notification">af727c4a8340e2109befcc65eeaad3a8</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>bf727c4a8340e2109befcc65eeaad3c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=af727c4a8340e2109befcc65eeaad3a8^sys_idNOT INf7727c4a8340e2109befcc65eeaad3c6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Event Budget Approval Notification">af727c4a8340e2109befcc65eeaad3a8</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>f7727c4a8340e2109befcc65eeaad3c6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <ui_id>d50480f8-8410-490d-8505-d2168106286c</ui_id>
+        <values>H4sIAAAAAAAA/9WW227bOBCGX8XQtWWQkmzJudttEKBAmwJJ2puiEEbk0CFAHUpRabJG3n2HknyK3bRpmwX2ksPTP//MR+nzOtAyOAsSmUm5VJwpzjnjbM4jnmGGhUgXKUZZMA0qKJFWWhS1lTS+A9P5wHr9sZHgUOZ8JjprsXKPjzQvddsYePg0LqOIuNVG0nxw9vnLNGjA0okObXC2fjL1s5IMFGho6dVG01ON7qHxY1mLriRdud4E3407z8eZydtzmqFNXg6fBnjvsJJIOhSYFqdBCRUlWduHbcQiyA+V2QVudeWGREu4b/U/dHMc+XUKKTMxmrAd5qNBQ1idg4NrZzvhOrv1q9YC28ETiQo6497sx4YFHxqn62rY4qAwm9216crqcnAk2B6wV4+uJRHY+ES9crqcslDXt/W3q43IC131lowpmlqA2Y7AOauLznk566DTN6fcHsKn/UaD/cISmkZXq7yx9Z3u7yP15WxlaDBTpv5GMlu9qmYgfKozqgTMLih+3oc/gdU+7/d0DG32d36s9NcO3/o+kpyl8ZKJMI3mcZgwAWGRySKEIlLzJFlki4IHj9OgfWjfGGjbnWNUqvxr5xMe/Budynuze6fzvuH8ZmF14/4ieXc4+vM4HdnK+HONHEe7vt07c8fXfc4XnGVJnOOdv53lRSdX6I4R+3sTfxloP6FvA9pN316n9Y6sHcXe7e+dXA4TI2nRC0kbWvQEaBn7H4E2pvX7pB14fQjagdv/CWeiKApV4DLkhRBhkmIWZhGkIc6ZiFUUM5aqX+DsR3Qlz3fv3perqp1WWkBfxB1fjMVRKhhkccIw4mxZoBJiMUcEkHEqjjm73Dto4urJe6hghXaiajsZ2JyQQ7Z++Sfvx7lsSLw8TOZ0iiOSOzAOibzai49Axs8DOfD3K18+qvrwfGEJ2uRDg32H0ie5/WFiv6fkAGNQCoX/p1EajaROHB7fV/mMqmsEK24v/E2+hgOzh8gfFJbApzuOkN8v5+sRf3PcUy26fLQl9wfkBEIJviP6DJ8+FMmSYxpHWbhcRPRQYDwPCxnHIaeHg6BDFcnX+SB/+ReNbOz47goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8^sys_idNOT IN3b727c4a8340e2109befcc65eeaad3b2,73727c4a8340e2109befcc65eeaad3b9,f7727c4a8340e2109befcc65eeaad3bf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>3b727c4a8340e2109befcc65eeaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>73727c4a8340e2109befcc65eeaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:27</sys_created_on>
+        <sys_id>f7727c4a8340e2109befcc65eeaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_af727c4a8340e2109befcc65eeaad3a8"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e89178c68340e2109befcc65eeaad3b7</sys_id>
+        <latest_snapshot>af727c4a8340e2109befcc65eeaad3a8</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e89178c68340e2109befcc65eeaad3b7^sys_idNOT IN3f727c4a8340e2109befcc65eeaad3cf"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>e89178c68340e2109befcc65eeaad3b7</plan_id>
+        <snapshot>af727c4a8340e2109befcc65eeaad3a8</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 05:38:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f727c4a8340e2109befcc65eeaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 05:38:28</sys_updated_on>
+        <trigger display_value="">bf727c4a8340e2109befcc65eeaad3cd</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e89178c68340e2109befcc65eeaad3b7"/>
+</record_update>

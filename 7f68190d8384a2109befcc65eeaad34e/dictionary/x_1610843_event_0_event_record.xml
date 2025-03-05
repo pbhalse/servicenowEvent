@@ -14,6 +14,7 @@
         </element>
         <element label="Contact Person" max_length="40" name="contact_person" type="string"/>
         <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Event Manager" max_length="32" name="event_manager" reference="sys_user" reference_qual="roles=x_1610843_event_0.event_manager^EQ" reference_qual_condition="roles=x_1610843_event_0.event_manager^EQ" type="reference"/>
         <element label="Emai" max_length="40" name="emai" type="string"/>
         <element label="VIP" max_length="40" name="vip" type="boolean"/>
         <element label="Event Date" max_length="40" name="event_date" type="glide_date_time"/>

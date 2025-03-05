@@ -12,7 +12,7 @@
             </choice>
         </element>
         <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
-        <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="event_id" reference="x_1610843_event_0_event_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Event Id" max_length="32" name="event_id" reference="x_1610843_event_0_event_record" type="reference"/>
         <element label="Availability" max_length="40" name="availability" type="boolean"/>
     </element>
 </database>

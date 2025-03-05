@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1610843_event_0_event_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1610843_event_0_event_task">status=new^EQ<item display_value="New" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="new"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Task Assignment API</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+ 
+    var restMessage = new sn_ws.RESTMessageV2('Event Notification REST API', 'Task Assignment');
+   
+    restMessage.setStringParameter('task_id', current.getUniqueValue());
+    restMessage.setStringParameter('event_id', current.getValue('event_id'));
+    restMessage.setStringParameter('task_name', current.getValue('task_name'));
+    restMessage.setStringParameter('assigned_to', current.getDisplayValue('assigned_to'));
+    restMessage.setStringParameter('due_date', current.getValue('due_date'));
+ 
+    var response = restMessage.executeAsync();
+ 
+    gs.addInfoMessage("Create Task POST API called successfully...");
+	gs.log("Create Task POST API called successfully");
+ 
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 19:42:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5142b782830026109befcc65eeaad357</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Task Assignment API</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1610843_event_0">7f68190d8384a2109befcc65eeaad34e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">7f68190d8384a2109befcc65eeaad34e</sys_scope>
+        <sys_update_name>sys_script_5142b782830026109befcc65eeaad357</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 19:45:07</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=5142b782830026109befcc65eeaad357"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5142b782830026109befcc65eeaad357</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 19:42:29</sys_created_on>
+        <sys_id>13a3b382830026109befcc65eeaad324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 19:42:29</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
